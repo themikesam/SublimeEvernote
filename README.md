@@ -1,18 +1,23 @@
-SublimeEvernote
-===============
+Evernote for Sublime Text
+=========================
 
-[Sublime Text 3](http://www.sublimetext.com/3) plugin for [Evernote](http://www.evernote.com)
+[Sublime Text](http://www.sublimetext.com/3) plugin for [Evernote](http://www.evernote.com)
 
-This package combines [jamiesun](https://github.com/jamiesun)'s original plugin with [rekotan](https://github.com/rekotan)'s update. Jamiesun's original package doesn't work for me because it attempts to authenticate via the (now) outdated Userstore.authenticate. Rekotan updated the package to use a proper token; however, the update also sends the markdown as preformatted text. I prefer to transform the Markdown to Evernote rich text, and if you're of the same mind, then this is your Sublime-Evernote package.
+This package is based on [SublimeEvernote](https://github.com/jamiesun/SublimeEvernote).
+It adds support for Sublime Text 3 (thanks to [timlockridge](https://github.com/timlockridge/SublimeEvernote)) and includes new features as open/update of notes from Sublime.
 
-I did little work here--merely cobbling together the efforts of the original pacakge and a fork.
+# Main Features
+
+ * **Send a note to Evernote:** converts the markdown document in the current view into rich text and sends it to your Evernote. You will be able to choose a title, tags and the notebook where to store it.
+ * **Open a note from Evernote**: shows panels to choose a note from a notebook, converts it to markdown and presents it in a view.
+ * **Update note**: when editing the markdown of an opened note you can save it back to Evernote (again in rich text).
 
 # Installation
 
 clone this repository with
 
 ```sh
-$ git clone --recursive http://github.com/timlockridge/SublimeEvernote.git
+$ git clone --recursive http://github.com/bordaigorl/sublime-evernote.git
 ```
 
 in
@@ -26,13 +31,17 @@ in
 
 **Note: When you first run this package from the command palette, it will launch a browser window with your Evernote developer token. Copy the token and paste it into the prompt at the bottom of your Sublime window. Sublime will store the token data in `Sublime Text 3/Packages/User/SublimeEvernote.sublime-settings`**
 
-`Command Palette` > `Send to evernote`
+`Command Palette` > `Evernote: Send to Evernote`
+`Command Palette` > `Evernote: Open Evernote Note`
+`Command Palette` > `Evernote: Update Evernote Note`
+`Command Palette` > `Evernote: Reconfigure`
 
-`Context menu` > `Send to Evernote`
+# Acknowledgements
 
-`Context menu` > `Evernote settings`
-
-# Some Modifications
-
-This version will work in Sublime Text 3 with Python 3, and it will also allow you to choose which
-notebook you would like to save your note to.
+ * Original Plugin: [jamiesun](https://github.com/jamiesun/SublimeEvernote)
+ * Port to ST3:
+     - [rekotan](https://github.com/rekotan/SublimeEvernote)
+     - [timlockridge](https://github.com/timlockridge/SublimeEvernote)
+ * Markdown2 converter: [trentm](https://github.com/trentm/python-markdown2/)
+ * HTML2Markdown: [Aaron Swartz](https://github.com/aaronsw/html2text)
+ * Evernote API: <https://github.com/evernote/evernote-sdk-python>
