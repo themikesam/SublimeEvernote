@@ -11,6 +11,17 @@ It adds support for Sublime Text 3 (thanks to [timlockridge](https://github.com/
  * **Send a note to Evernote:** converts the markdown document in the current view into rich text and sends it to your Evernote. You will be able to choose a title, tags and the notebook where to store it.
  * **Open a note from Evernote**: shows panels to choose a note from a notebook, converts it to markdown and presents it in a view.
  * **Update note**: when editing the markdown of an opened note you can save it back to Evernote (again in rich text).
+ * **Full two-way support for metadata**: just put a YAML-like header in your markdown file, and send/update to evernote commands will respect the info. The open command produces the header for imported notes. For example:
+```yaml
+---
+title: Title
+tags: list, of, tags
+notebook: Notebook name
+---
+Contents
+```
+* **Inline css**: some tags can be styled (with inline style attributes). This required a small patch in `markdown2.py`.
+
 
 # Installation
 
