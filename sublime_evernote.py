@@ -360,6 +360,12 @@ class SaveEvernoteNoteCommand(EvernoteDoText):
         return False
 
 
+class SaveEvernoteNote(sublime_plugin.EventListener):
+
+    def on_post_save(self, view):
+        view.run_command("save_evernote_note")
+
+
 class OpenEvernoteNoteCommand(EvernoteDoWindow):
 
     def do_run(self):
