@@ -71,15 +71,20 @@ else:
     def enc(txt):
         return txt
 
+DEFAULT_PRE_STYLE = "color: #000000; font-family: monospace,monospace; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word; background-color: #f8f8f8; border: 1px solid #cccccc; border-radius: 3px 3px 3px 3px; overflow: auto; padding: 6px 10px; margin-bottom: 10px;"
 MD_EXTRAS = {
     'footnotes'          : None,
-    'fenced-code-blocks' : None,
+    'fenced-code-blocks' : {
+        'cssclass': '',
+        'noclasses': True,
+        'cssstyles': DEFAULT_PRE_STYLE
+    },
     'cuddled-lists'      : None,
     'code-friendly'      : None,
     'metadata'           : None,
     # This should be loaded from settings!
     'inline-css'         : {
-        'pre': "color: #000000; font-family: monospace,monospace; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word; background-color: #f8f8f8; border: 1px solid #cccccc; border-radius: 3px 3px 3px 3px; overflow: auto; padding: 6px 10px; margin-bottom: 10px;",
+        'pre': DEFAULT_PRE_STYLE,
         'code': "color: black; font-family: monospace,monospace; font-size: 0.9em;"
     }
 }
