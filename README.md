@@ -1,6 +1,12 @@
 Evernote for Sublime Text
 =========================
 
+This plugin was overhauled & upgraded by Emanuele D'Osualdo. View his [SublimeEvernote](https://github.com/bordaigorl/sublime-evernote) repo, or simply download the plugin from Sublime's package manager.
+
+I'm keeping this repo alive only for historical/archival purposes.
+
+---
+
 [Sublime Text](http://www.sublimetext.com/3) plugin for [Evernote](http://www.evernote.com)
 
 This package is based on [SublimeEvernote](https://github.com/jamiesun/SublimeEvernote).
