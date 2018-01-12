@@ -52,6 +52,8 @@ in
 `Command Palette` > `Evernote: Open Evernote Note`
 `Command Palette` > `Evernote: Update Evernote Note`
 `Command Palette` > `Evernote: Reconfigure`
+### Evernote:  [Developer Token will not be supported soon since the security issues, and not recommanded to use it.](https://discussion.evernote.com/topic/108911-developer-token-are-not-supported-anymore/)
+### Currently solution: [Submit a ticket](https://www.evernote.com/SupportLogin.action)
 
 # Acknowledgements
 
